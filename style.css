@@ -1,0 +1,225 @@
+
+.container{
+  font-family: 'PT Serif', serif;
+  background-image: url('https://images.unsplash.com/photo-1595094088173-918b328d9b6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhZ3VuYSUyMGJlYWNofGVufDB8fDB8fHww&w=1000&q=80');
+  background-repeat: repeat;
+  margin-top: 0;
+  color: white;
+  position: relative;
+  height: 100%;
+}
+
+/* 상단메뉴 */
+.sub-menu{
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.sub-menu .menu_bar{
+  display: none;
+}
+
+.sub-menu .material-symbols-outlined{
+  margin-top: 10px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s;
+  font-size: 30px;
+}
+
+.sub-menu .material-symbols-outlined:hover{
+  background-color: white;
+  color: rgb(116, 202, 243);
+}
+
+.sub-btn{
+  background-color: rgb(116, 202, 243);
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  display: none;
+}
+
+.sub-btn.showBtn{
+  display: block;
+}
+
+.sub-btn .close{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.sub-btn .close:hover{
+  transform: scale(1.1);
+}
+
+.sub-btn .close .material-symbols-outlined{
+ font-size: 40px;
+}
+
+.sub-btns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.sub-btns button{
+  margin: 10px;
+  font-size: 25px;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.search{
+  display: flex;
+}
+
+.search-input-btn{
+  display: flex;
+  opacity: 0;
+}
+
+.search-input-btn button{
+  margin-top: 10px;
+  height: 30px;
+  margin-left: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  transition: .5s;
+}
+
+.search-input-btn button:hover{
+  background-color: rgb(116, 202, 243);
+}
+
+.search-input-btn .search-input{
+  outline: none;
+  box-sizing: border-box;
+  padding: 5px 50px;
+  font-size: 15px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.search-input-btn.showInput{
+ opacity: 1;
+}
+
+
+
+/* 타이틀&메인페이지 */
+.title h1{
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.title .list{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.title .list button{
+  margin:0 5px 5px 0;
+  font-size: 25px;
+  background-color: transparent;
+  border: 0;
+  color: white;
+}
+
+.title .list button:last-child{
+  margin-right: 0;
+}
+
+.list{
+  position: relative;
+}
+
+.list .underline{
+  position: absolute;
+  width: 170px;
+  height: 2px;
+  top:45px;
+  left: 110px;
+  background-color: rgba(169, 169, 250, 0.566);
+  transition: .5s;
+}
+
+.main-img{
+  padding: 10px;
+  width: 210px;
+  margin: 0 auto;
+}
+
+.main-page img{
+  display: block;
+  width: 200px;
+}
+
+.main-page .name{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgba(169, 169, 250, 0.411);
+}
+
+.main-page .recipe{
+  margin: 10px auto;
+  font-size: 20px;
+  width: 700px;
+  text-align: center;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+
+@media (max-width:60rem){
+  .sub-menu .menu_bar{
+    display: block;
+  }
+
+  .title .list{
+    display: none;
+  }
+
+
+  .title h1{
+    font-size: 40px;
+  }
+
+  .main-page{
+    max-width: 500px;
+  }
+
+  .main-page .recipe{
+    max-width: 500px;
+  }
+}
+
