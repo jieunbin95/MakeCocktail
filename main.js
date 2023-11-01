@@ -103,12 +103,6 @@ const errorsRender = (message) => {
   document.querySelector(".main-page").innerHTML = errorHTML;
 };
 
-
-
-// 페이지네이션만들기
-
-
-
 cocktail();
 
 //검색창버튼을 누르면 search-input나오기
